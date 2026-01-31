@@ -23,14 +23,19 @@ Keep in mind this is the first draft, and my first Lua project. Suggestions and 
 - Neovim >= 0.9.0
 - LSP client configured
 - Yazi file manager
-- Yazi LSP plugin
+- ([yazi-lsp-info.yazi](https://github.com/Durelius/yazi-lsp-info.yazi)
+
+## Recommended
+
+It is recommended to use this together with the nvim yazi integration plugin yazi.nvim for the best workflow:
+- [yazi.nvim](https://github.com/mikavilpas/yazi.nvim) - Yazi integration for Neovim
 
 ## Lazy installation
  
 ### [lazy.nvim](https://github.com/folke/lazy.nvim)
 ```lua
 return {
-  "durelius/yazi-lsp-info.nvim",
+  "durelius/yazi-lsp-info.nvim", opts = {}
 }
 ```
 ## Installation with all config options
@@ -70,15 +75,6 @@ return {
   },
 } --- This is all config options available
 ```
-
-
-## Yazi Integration
-
-TODO
-
-The plugin exports diagnostics to `~/.local/share/nvim/yazi_lsp_data.lua`.
-
-
 
 ## How It Works
 
