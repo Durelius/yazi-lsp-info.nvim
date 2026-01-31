@@ -1,4 +1,4 @@
-# yazi-lsp.nvim
+# yazi-lsp-info.nvim
 
 > Export Neovim LSP diagnostics to Yazi file manager
 
@@ -74,6 +74,32 @@ return {
     },
   },
 } --- This is all config options available
+```
+
+## Yazi Installation
+
+```sh
+ya pkg add durelius/yazi-lsp-info
+```
+
+Add the following to your `~/.config/yazi/init.lua`:
+
+```lua
+require("yazi-lsp-info"):setup()
+```
+
+And register it as fetchers in your `~/.config/yazi/yazi.toml`:
+
+```toml
+[[plugin.prepend_fetchers]]
+id  = "yazi-lsp-info"
+url = "*"
+run = "yazi-lsp-info"
+
+[[plugin.prepend_fetchers]]
+id  = "yazi-lsp-info"
+url = "*/"
+run = "yazi-lsp-info"
 ```
 
 ## How It Works
