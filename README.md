@@ -23,7 +23,7 @@ Keep in mind this is the first draft, and my first Lua project. Suggestions and 
 - Neovim >= 0.9.0
 - LSP client configured
 - Yazi file manager
-- ([yazi-lsp-info.yazi](https://github.com/Durelius/yazi-lsp-info.yazi)
+- [yazi-lsp-info.yazi](https://github.com/Durelius/yazi-lsp-info.yazi)
 
 ## Recommended
 
